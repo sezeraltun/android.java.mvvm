@@ -1,0 +1,52 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="detailViewModel"
+            type="android.java.mvvm.viewmodel.DetailViewModel" />
+    </data>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:text="@{detailViewModel.name}"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:text="@{detailViewModel.address}"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:text="@{detailViewModel.phone}"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+</layout>
